@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    direction: rtl;
+}
+.card {
+    width: 320px;
+    height: 450px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: rotate(-45deg);
+    top: 60px;
+}
+.heart:before,
+.heart:after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+}
+.heart:before {
+    top: -50px;
+    left: 0;
+}
+.heart:after {
+    left: 50px;
+    top: 0;
+}
+.message {
+    padding: 20px;
+    font-size: 22px;
+    color: #333;
+}
+.btn {
+    background: #ff477e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #d93f6b;
+    transform: scale(1.1);
+}
